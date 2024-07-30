@@ -8,6 +8,7 @@ import {
   Divider,
 } from "@mui/material";
 import { useRouter } from "next/router";
+import { Icon } from "@iconify/react";
 import Card from "@/utils/components/Card";
 import { AvatarGenerator } from "random-avatar-generator";
 
@@ -84,20 +85,17 @@ const UserProfile = () => {
           <MenuItem onClick={handleClose}>
             <Avatar src={avatar} /> Profile
           </MenuItem>
-          <MenuItem onClick={handleClose}>
-            <Avatar src={avatar} /> My account
-          </MenuItem>
           <Divider />
           <MenuItem onClick={handleClose}>
-            <ListItemIcon>hi</ListItemIcon>
-            Add another account
-          </MenuItem>
-          <MenuItem onClick={handleClose}>
-            <ListItemIcon>hi</ListItemIcon>
+            <ListItemIcon>
+              <Icon icon="eos-icons:rotating-gear" width="24" height="24" />
+            </ListItemIcon>
             Settings
           </MenuItem>
           <MenuItem onClick={handleClose}>
-            <ListItemIcon>hi</ListItemIcon>
+            <ListItemIcon>
+              <Icon icon="entypo:log-out" width="24" height="24" />
+            </ListItemIcon>
             Logout
           </MenuItem>
         </Menu>

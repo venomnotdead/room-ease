@@ -11,6 +11,15 @@ const theme = createTheme({
     secondary: {
       main: '#9CDBA6',
     },
+    components: {
+      MuiMenu: {
+        styleOverrides: {
+          paper: {
+            backgroundColor: '#F7F7F7',
+          }
+        }
+      }
+    }
   },
 });
 
