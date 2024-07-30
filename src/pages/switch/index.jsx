@@ -15,15 +15,15 @@ const Index = () => {
   const [active, setActive] = useState(-1);
   const [rooms, setRooms] = useState(roomsData);
 
-  useEffect(() => {
-    // if (active != -1) {
-    const newArray = [
-      ...rooms.filter((room) => room.name == active),
-      ...rooms.filter((room) => room.name !== active),
-    ];
-    setRooms(newArray);
-    // }
-  }, [active]);
+  // useEffect(() => {
+  //   // if (active != -1) {
+  //   const newArray = [
+  //     ...rooms.filter((room) => room.name == active),
+  //     ...rooms.filter((room) => room.name !== active),
+  //   ];
+  //   setRooms(newArray);
+  //   // }
+  // }, [active]);
 
   return (
     <div className="flex justify-center items-center flex-col">
