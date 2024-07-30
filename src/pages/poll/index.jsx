@@ -53,7 +53,6 @@ const PollCard = () => {
             <Card
               key={i}
               className="p-6 shadow-lg rounded-lg"
-              style={{ marginBottom: "20px" }}
             >
               <div className="mb-4">
                 <h2 className="text-xl font-bold">{poll.name}</h2>
@@ -62,7 +61,7 @@ const PollCard = () => {
               <div className="space-y-4">
                 {poll.options.map((option, index) => (
                   <div key={index} className="flex items-center space-x-4">
-                    <span className="w-16">{option.name}</span>
+                    <span className="w-16 text-center">{option.name}</span>
                     <LinearProgress
                       value={(option.votes.length / members) * 100}
                       aria-labelledby="continuous-slider"
