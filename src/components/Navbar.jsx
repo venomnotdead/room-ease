@@ -61,13 +61,13 @@ const Navbar = () => {
               onClick={() => setActive(i)}
             >
               <span
-                className={`text-xl cursor-pointer duration-500 ${
+                className={`text-xl cursor-pointer duration-500 mb-3 ${
                   i === active && "-mt-8 text-primary-lightest z-10"
                 }`}
               >
                 <Icon icon={nav.icon} width="24" height="24" />
               </span>
-              <span
+              {/* <span
                 className={`text-primary-lightest ${
                   active === i
                     ? "translate-y-4 duration-700 opacity-100 text-black"
@@ -75,7 +75,7 @@ const Navbar = () => {
                 }`}
               >
                 {nav.name}
-              </span>
+              </span> */}
             </Link>
           </li>
         ))}
