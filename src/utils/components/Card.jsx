@@ -9,7 +9,7 @@ const Card = ({ children, className, onClick, style }) => {
       className={`bg-primary-darker px-6 rounded-xl m-2 shadow-xl ${
         className ?? ""
       }`}
-      style={style}
+      style={style??{}}
     >
       {children}
     </div>
